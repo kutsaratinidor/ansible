@@ -1,0 +1,1 @@
+git repo of what I used when following Jeff Geerling's Ansible for DevOps recorded lessons. Some have been adjusted based on my environment as I dont have AWS instances available. I just used Vagrant to spin up VMs on my local machine to run the ansible playbooks
