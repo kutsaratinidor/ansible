@@ -1,0 +1,9 @@
+# Application servers
+[solr]
+192.168.60.4
+
+
+# variables for all the servers
+[all:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key

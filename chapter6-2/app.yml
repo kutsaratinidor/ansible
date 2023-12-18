@@ -1,0 +1,11 @@
+---
+- name: Issue a command.
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Issue a demo command.
+      command: date
+      register: foo
+
+    - debug: var=foo
