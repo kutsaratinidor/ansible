@@ -1,0 +1,15 @@
+---
+- name: Demo ansible lint
+  hosts: localhost
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: Get system uptime for demo.
+      command: uptime
+      changed_when: false
+      register: system_uptime
+
+    - name: Print the registered output of the 'uptime' command.
+      debug:
+        var: system_uptime.stdout
