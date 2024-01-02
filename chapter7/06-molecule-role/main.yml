@@ -1,9 +1,8 @@
 ---
-# tasks file for my_role
----
 - name: Install Apache.
   hosts: all
   become: true
+
 
   vars:
     apache_package: apache2
